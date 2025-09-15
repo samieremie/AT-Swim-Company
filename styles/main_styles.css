@@ -1,0 +1,155 @@
+/* 
+colors:
+- #589ee6 (light blue)
+- #4586c0 (darker blue)
+- #356d9c (dark blue)
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;;
+    /* border: 1px solid black; */
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #414141;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation bar styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    box-shadow: 0 7px 7px -10px rgba(0, 0, 0, 0.5);
+}
+
+.company-name {
+    font-size: 2rem;
+    font-weight: 1000;
+    color: #928406;
+    width: max-content;
+    font-family: 'Bad Script', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-size: 1.4em;
+    font-weight: 600;
+    width: max-content;
+    height: max-content;
+    color: #414141;
+    transition: all 0.1s ease-in-out;
+}
+
+.nav-links:hover a.link {
+    color: #9b9b9b;
+}
+
+.nav-links a.link:hover {
+    color: #928406;
+    transform: scale(1.05);
+}
+
+/* Footer styles */
+footer {
+    background-color: #414141;
+    /* color:#928406; */
+    color: #f0f0f0;
+    text-align: center;
+    padding: 1em;
+    margin-top: 50px;
+    /* height: 35vh; */
+}
+
+.book-meeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    /* padding: 1em; */
+    height: 100%;
+}
+
+.book-meeting p {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #928406;
+    margin-top: 20px;
+}
+
+.btn-book-meeting {
+    background-color: #f0f0f0;
+    color: #414141;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border: none;
+    padding: 0.8em 1.5em;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-book-meeting:hover {
+    background-color: #4586c0;
+    color: #f0f0f0;
+}
+
+footer hr {
+    width: 70%;
+    margin: 0 auto;
+}
+
+footer .heading {
+    color: #928406;
+    margin-top: 40px;
+    font-size: 1.75em;
+    font-weight: 900;
+}
+
+.maps {
+    margin: 30px auto 50px;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.piscine {
+    width: 400px;
+}
+
+.piscine .title {
+    text-align: left;
+    font-size: 1.25em;
+    margin: 1em 0;
+}
+
+.map-frame {
+    border: none;
+    width: 100%;
+    height: 300px;
+}
+
+.copyright {
+    margin-top: 1em;
+}

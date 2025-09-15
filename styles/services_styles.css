@@ -1,0 +1,109 @@
+/* Services styles */
+.nav-links .services {
+    color: #928406;
+}
+
+.propositions h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    padding: 2em 0em 0em;
+}
+
+.propositions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+    margin: 2em auto;
+}
+
+.slide {
+    width: 65%;
+    display: flex;
+    gap: 75px;
+    align-items: center;
+    height: 100vh;
+    height: 100svh;
+}
+
+.slide img {
+    width: 45%;
+    border-radius: 20px;
+}
+
+.content .title {
+    font-size: 1.75em;
+    font-weight: 1000;
+    margin-bottom: 2em;
+}
+
+.content .info {
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: 2em;
+}
+
+.btn-more-info {
+    --primary-color: #645bff;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 30px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    font-size: 1.05em;;
+}
+
+.btn-more-info .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-more-info .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+.btn-more-info .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+.btn-more-info:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+.btn-more-info:hover .arrow {
+    background: var(--secondary-color);
+}
+
+.btn-more-info:hover .arrow:before {
+    right: 0;
+}
