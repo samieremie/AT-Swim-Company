@@ -126,6 +126,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    header {
+        box-shadow: none;
+    }
+    
     .home .icon-name {
         color: #928406;
     }
