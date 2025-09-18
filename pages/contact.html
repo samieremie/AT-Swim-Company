@@ -16,7 +16,17 @@
     <link rel="icon" href="/images/logo.JPG" />
   </head>
   <body>
-    <header>
+    <header class="desktop-display">
+      <a class="company-name" href="/index.html">AT Swim&Coaching</a>
+      <nav class="nav-links">
+        <a class="home link" href="/index.html">Accueil </a>
+        <a class="services link" href="/pages/services.html"> Services </a>
+        <a class="about link" href="/pages/about.html">À propos </a>
+        <a class="contact link" href="/pages/contact.html"> Contact </a>
+      </nav>
+    </header>
+
+    <header class="mobile-display">
       <!-- <a href="/index.html"
         ><img
           src="/images/logo.JPG"
@@ -25,11 +35,46 @@
       /></a> -->
       <a class="company-name" href="/index.html">AT Swim&Coaching</a>
       <nav class="nav-links">
-        <a class="home link" href="/index.html">Accueil</a>
-        <a class="services link" href="/pages/services.html">Services</a>
-        <a class="about link" href="/pages/about.html">À propos</a>
-        <a class="contact link" href="/pages/contact.html">Contact</a>
-        <!-- <a href="#">Connection | Inscription</a> -->
+        <a href="/index.html">
+          <div class="home link">
+            <img
+              class="icon"
+              src="../images/icons/ic_fluent_home_24_regular.svg"
+              alt="Home icon"
+            />
+            <p class="icon-name">Accueil</p>
+          </div>
+        </a>
+        <a href="/pages/services.html">
+          <div class="services link">
+            <img
+              class="icon"
+              src="../images/icons/swimmer.png"
+              alt="Swimmer icon"
+            />
+            <p class="icon-name">Services</p>
+          </div>
+        </a>
+        <a href="/pages/about.html">
+          <div class="about link">
+            <img
+              class="icon"
+              src="../images/icons/ic_fluent_info_24_regular.svg"
+              alt="info icon"
+            />
+            <p class="icon-name">À propos</p>
+          </div>
+        </a>
+        <a href="/pages/contact.html">
+          <div class="contact link">
+            <img
+              class="icon"
+              src="../images/icons/ic_fluent_person_call_24_regular.svg"
+              alt="contact icon"
+            />
+            <p class="icon-name">Contact</p>
+          </div>
+        </a>
       </nav>
     </header>
 
@@ -66,7 +111,7 @@
 
     <div class="maps-page">
       <p class="heading">Lieux des cours</p>
-      <div class="maps">
+      <div class="maps" id="maps">
         <div class="piscine">
           <p class="title">Piscine de Rhode-Saint-Genèse</p>
           <iframe
@@ -78,7 +123,9 @@
           ></iframe>
         </div>
         <div class="piscine">
-          <p class="title">Piscine de Braine-l'Alleud</p>
+          <p class="title">
+            Piscine du Collège Cardinal Mercier à Braine-l'Alleud
+          </p>
           <iframe
             class="map-frame"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5055.585371152232!2d4.386563976075367!3d50.686673070327714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3d1fbeada9837%3A0x80fe821a5cd9455e!2sColl%C3%A8ge%20archi%C3%A9piscopal%20Cardinal%20Mercier!5e0!3m2!1sfr!2sbe!4v1757605553151!5m2!1sfr!2sbe"
@@ -97,6 +144,6 @@
         >
       </div>
     </footer> -->
-    <script src="../script.js"></script>
+    <script src="../scripts/contact.js"></script>
   </body>
 </html>

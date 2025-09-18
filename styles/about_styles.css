@@ -7,7 +7,7 @@ header {
     margin-bottom: 50px;
 }
 
-.about {
+.about-section {
     width: 75%;
     margin: 0 auto;
     display: flex;
@@ -16,12 +16,12 @@ header {
     height: 100vh;
 }
 
-.about img {
+.about-section img {
     width: 50%;
     border-radius: 50%;
 }
 
-.about .content {
+.about-section .content {
     background-color: #f0f0f0;
     padding: 2em;
     width: 45%;
@@ -40,4 +40,63 @@ header {
     color: #414141;
     line-height: 1.6;
     width: 100%;
+}
+
+.faq {
+    width: 60%;
+    margin: 50px auto 100px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.75em;
+    font-weight: 800;
+    color: #414141;
+    padding: 0.5em;
+    width: 100%;
+    border: none;
+}
+
+.question:hover {
+    cursor: pointer;
+    color:#928406;
+}
+
+.response {
+    padding: 1em;
+    font-size: 1.2rem;
+}
+
+/* Arrow styles */
+.arrow {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: inline-block;
+    position: relative;
+    margin: 0 1rem;
+}
+.arrow span {
+    top: 0.5rem;
+    position: absolute;
+    width: 0.75rem;
+    height: 0.2rem;
+    background-color: #414141;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.arrow span:first-of-type {
+    left: 0;
+    transform: rotate(35deg);
+}
+.arrow span:last-of-type {
+    right: 0;
+    transform: rotate(-35deg);
+}
+.arrow.active span:first-of-type {
+    transform: rotate(-35deg);
+}
+.arrow.active span:last-of-type {
+    transform: rotate(35deg);
 }

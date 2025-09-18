@@ -42,24 +42,3 @@ form.addEventListener('submit', function(event) {
     status.textContent = "Erreur lors de l'envoi du formulaire.";
   });
 });
-
-/* Code for the faq buttons */ 
-// document.querySelectorAll('.question').forEach(function(question) {
-//   question.addEventListener('click', function() {
-//     alert("Entered function")
-//     const response = document.querySelector('.response');
-//     if (response) {
-//       response.classList.toggle('hidden');
-//     }
-//   });
-// });
-document.querySelectorAll(".question");
-// console.log(document.querySelectorAll(".question"));
-// document.querySelectorAll('.arrow').forEach(function(question) {
-//     question.addEventListener('click', function() {
-//       const arrow = this.querySelector('.arrow');
-//       if (arrow) {
-//           arrow.classList.toggle('active');
-//       }
-//     });
-// });

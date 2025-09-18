@@ -16,7 +16,17 @@
     <link rel="icon" href="/images/logo.JPG" />
   </head>
   <body>
-    <header>
+    <header class="desktop-display">
+      <a class="company-name" href="/index.html">AT Swim&Coaching</a>
+      <nav class="nav-links">
+        <a class="home link" href="/index.html">Accueil </a>
+        <a class="services link" href="/pages/services.html"> Services </a>
+        <a class="about link" href="/pages/about.html">À propos </a>
+        <a class="contact link" href="/pages/contact.html"> Contact </a>
+      </nav>
+    </header>
+
+    <header class="mobile-display">
       <!-- <a href="/index.html"
         ><img
           src="/images/logo.JPG"
@@ -25,34 +35,105 @@
       /></a> -->
       <a class="company-name" href="/index.html">AT Swim&Coaching</a>
       <nav class="nav-links">
-        <a class="home link" href="/index.html">Accueil</a>
-        <a class="services link" href="/pages/services.html">Services</a>
-        <a class="about link" href="/pages/about.html">À propos</a>
-        <a class="contact link" href="/pages/contact.html">Contact</a>
-        <!-- <a href="#">Connection | Inscription</a> -->
+        <a href="/index.html">
+          <div class="home link">
+            <img
+              class="icon"
+              src="../images/icons/ic_fluent_home_24_regular.svg"
+              alt="Home icon"
+            />
+            <p class="icon-name">Accueil</p>
+          </div>
+        </a>
+        <a href="/pages/services.html">
+          <div class="services link">
+            <img
+              class="icon"
+              src="../images/icons/swimmer.png"
+              alt="Swimmer icon"
+            />
+            <p class="icon-name">Services</p>
+          </div>
+        </a>
+        <a href="/pages/about.html">
+          <div class="about link">
+            <img
+              class="icon"
+              src="../images/icons/ic_fluent_info_24_regular.svg"
+              alt="info icon"
+            />
+            <p class="icon-name">À propos</p>
+          </div>
+        </a>
+        <a href="/pages/contact.html">
+          <div class="contact link">
+            <img
+              class="icon"
+              src="../images/icons/ic_fluent_person_call_24_regular.svg"
+              alt="contact icon"
+            />
+            <p class="icon-name">Contact</p>
+          </div>
+        </a>
       </nav>
     </header>
 
-    <div class="about">
+    <div class="about-section">
       <img src="../images/collage.JPG" alt="A collage of swimming photos" />
       <div class="content">
         <h2>Qui sommes nous?</h2>
         <p>
           AT Swim&Coaching est votre partenaire de confiance pour atteindre vos
           objectifs aquatiques pour vos enfants. <br />
-          Sous l'oeil attentif de Adrien, un professeur d'éducation physique,
-          entraîneur de natation et maître sauveteur, nous sommes là pour
-          accompagner vos enfants et les motiver à chaque étape de leur
-          parcours.
+          Sous l'oeil attentif d'un professeur d'éducation physique, entraîneur
+          de natation et maître sauveteur, nous sommes là pour accompagner vos
+          enfants et les motiver à chaque étape de leur parcours.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <div class="question-response">
+        <div class="question">
+          <p>Quels sont vos tarifs?</p>
+          <div class="wrap">
+            <span class="arrow"><span></span><span></span></span>
+          </div>
+        </div>
+        <p class="response hidden">
+          Nos tarifs sont personnalisés en fonction de vos besoins et de la
+          durée de vos cours.
+        </p>
+      </div>
+      <div class="question-response">
+        <div class="question">
+          <p>Quelle est la durée d'un cours particulier?</p>
+          <div class="wrap">
+            <span class="arrow"><span></span><span></span></span>
+          </div>
+        </div>
+        <p class="response hidden">
+          La durée d'un cours particulier est de 30 minutes.
+        </p>
+      </div>
+      <div class="question-response">
+        <div class="question">
+          <p>Quelle est la durée d'un cours collectif?</p>
+          <div class="wrap">
+            <span class="arrow"><span></span><span></span></span>
+          </div>
+        </div>
+        <p class="response hidden">
+          La durée d'un cours collectif est de 1 heure.
         </p>
       </div>
     </div>
 
     <footer>
       <div class="book-meeting">
-        <p>Réservez une séance</p>
+        <p>Inscrivez-vous</p>
         <a href="/pages/contact.html"
-          ><button class="btn-book-meeting">Commencez</button></a
+          ><button class="btn-book-meeting">Inscription</button></a
         >
       </div>
       <!-- <hr />
@@ -82,5 +163,7 @@
       <hr />
       <p class="copyright">Copyright &copy; AT Swim&Coaching</p> -->
     </footer>
+
+    <script src="../scripts/about.js"></script>
   </body>
 </html>

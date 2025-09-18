@@ -1,0 +1,49 @@
+* {
+  border: 1px solid #000;
+}
+html {
+  height: 100%;
+  font-size: 20px;
+}
+body {
+  min-height: 100%;
+  font-family: Lato;
+  color: #3d3d3d;
+  background-color: RebeccaPurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test {
+    width: 80%;
+}
+.arrow {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  position: relative;
+  margin: 0 1rem;
+}
+.arrow span {
+  top: 0.5rem;
+  position: absolute;
+  width: 0.75rem;
+  height: 0.1rem;
+  background-color: #efefef;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+.arrow span:first-of-type {
+  left: 0;
+  transform: rotate(45deg);
+}
+.arrow span:last-of-type {
+  right: 0;
+  transform: rotate(-45deg);
+}
+.arrow.active span:first-of-type {
+  transform: rotate(-45deg);
+}
+.arrow.active span:last-of-type {
+  transform: rotate(45deg);
+}

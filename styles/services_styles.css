@@ -24,8 +24,8 @@
     display: flex;
     gap: 75px;
     align-items: center;
-    height: 100vh;
-    height: 100svh;
+    height: 80vh;
+    height: 80svh;
 }
 
 .slide img {
@@ -46,6 +46,8 @@
     margin-bottom: 2em;
 }
 
+
+/* Bouton plus d'informations */
 .btn-more-info {
     --primary-color: #645bff;
     --secondary-color: #fff;

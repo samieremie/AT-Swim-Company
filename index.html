@@ -17,7 +17,17 @@
   </head>
   <body>
     <div class="home-page">
-      <header>
+      <header class="desktop-display">
+        <a class="company-name" href="/index.html">AT Swim&Coaching</a>
+        <nav class="nav-links">
+          <a class="home link" href="/index.html">Accueil </a>
+          <a class="services link" href="/pages/services.html"> Services </a>
+          <a class="about link" href="/pages/about.html">À propos </a>
+          <a class="contact link" href="/pages/contact.html"> Contact </a>
+        </nav>
+      </header>
+
+      <header class="mobile-display">
         <!-- <a href="/index.html"
         ><img
           src="/images/logo.JPG"
@@ -26,15 +36,50 @@
       /></a> -->
         <a class="company-name" href="/index.html">AT Swim&Coaching</a>
         <nav class="nav-links">
-          <a class="home link" href="/index.html">Accueil</a>
-          <a class="services link" href="/pages/services.html">Services</a>
-          <a class="about link" href="/pages/about.html">À propos</a>
-          <a class="contact link" href="/pages/contact.html">Contact</a>
-          <!-- <a href="#">Connection | Inscription</a> -->
+          <a href="/index.html">
+            <div class="home link">
+              <img
+                class="icon"
+                src="images/icons/ic_fluent_home_24_regular.svg"
+                alt="Home icon"
+              />
+              <p class="icon-name">Accueil</p>
+            </div>
+          </a>
+          <a href="/pages/services.html">
+            <div class="services link">
+              <img
+                class="icon"
+                src="images/icons/swimmer.png"
+                alt="Swimmer icon"
+              />
+              <p class="icon-name">Services</p>
+            </div>
+          </a>
+          <a href="/pages/about.html">
+            <div class="about link">
+              <img
+                class="icon"
+                src="images/icons/ic_fluent_info_24_regular.svg"
+                alt="info icon"
+              />
+              <p class="icon-name">À propos</p>
+            </div>
+          </a>
+          <a href="/pages/contact.html">
+            <div class="contact link">
+              <img
+                class="icon"
+                src="images/icons/ic_fluent_person_call_24_regular.svg"
+                alt="contact icon"
+              />
+              <p class="icon-name">Contact</p>
+            </div>
+          </a>
         </nav>
       </header>
 
-      <div class="home">
+      <div class="home-section">
         <p class="description">
           Découvrez le plaisir de la <span id="natation">natation</span> et des
           activités aquatiques pour vos enfants avec des cours particuliers et
@@ -50,15 +95,18 @@
       <h2>Nous vous proposons</h2>
       <div class="options">
         <a href="pages/services.html#first" class="option">
-          <img src="/images/piscine.jpg" alt="A photo of a swimming pool" />
+          <img
+            src="/images/cours-natation.jpg"
+            alt="A photo of a swimming pool"
+          />
           <p class="text">Cours particuliers de natation</p>
         </a>
         <a href="pages/services.html#second" class="option">
-          <img src="/images/coach.JPG" alt="A photo of swim coach back" />
+          <img src="/images/piscine.jpg" alt="A photo of swim coach back" />
           <p class="text">Cours collectifs de natation</p>
         </a>
         <a href="pages/services.html#third" class="option">
-          <img src="/images/piscine2.jpg" alt="A photo of a swimming pool" />
+          <img src="/images/coach.JPG" alt="A photo of a swimming pool" />
           <p class="text">Programmes de remise en forme</p>
         </a>
       </div>
@@ -67,9 +115,9 @@
 
     <footer>
       <div class="book-meeting">
-        <p>Réservez une séance</p>
+        <p>Inscrivez-vous</p>
         <a href="/pages/contact.html"
-          ><button class="btn-book-meeting">Commencez</button></a
+          ><button class="btn-book-meeting">Inscription</button></a
         >
       </div>
       <!-- <hr />
