@@ -23,145 +23,11 @@ a {
     color: inherit;
 }
 
-/* Small devices (phones, large phones and portrait tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
-    /* Navigation styles */
-    header.desktop-display {
-        display: none;
-    }
-    header {
-        box-shadow: 0 7px 7px -10px rgba(0, 0, 0, 0.5);
-    }
-    .company-name {
-        font-size: 2rem;
-        font-weight: 1000;
-        color: #928406;
-        font-family: 'Bad Script', sans-serif;
-        width: 80%;
-        margin: 0 auto;
-        padding-top: 15px;
-        display: block;
-        /* border: 1px solid white; */
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        background-color: #f0f0f0;
-        width: 100%;
-        height: calc(75px + env(safe-area-inset-bottom));
-        height: calc(75px + constant(safe-area-inset-bottom)); /* fallback for older iOS */
-        box-shadow: 0 5px 5px 10px rgba(0, 0, 0, 0.1);
-        /* Safe area support for iPhones */
-        padding-bottom: env(safe-area-inset-bottom);
-        /* For backward compatibility with older iOS versions */
-        padding-bottom: constant(safe-area-inset-bottom);
-    }
-
-    .nav-links a {
-        width: 65px;
-    }
-    .nav-links .link {
-        width: 100%;
-        height: 100%;
-        text-align: center;
-    }
-
-    header .icon {
-        width: 35px;
-        height: 35px;
-    }
-
-    .link .icon-name {
-        font-size: 16px;
-        font-weight: 700;
-    }
-
-    /* Footer styles */
-    .btn-book-meeting {
-        background-color: #4586c0;
-        color: #f0f0f0;
-    }
-
-    .btn-book-meeting:hover {
-        background-color: #928406;
-        color: #f0f0f0;
-    }
-
-    footer {
-        margin-bottom: 100px;
-    }
-    
-}
-
-@media only screen and (min-width: 768px) {
-    /* Navigation bar styles */
-    header.mobile-display {
-        display: none;
-    }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 80%;
-        height: 100px;
-        margin: 0 auto;
-        background-color: #f0f0f0;
-        box-shadow: 0 7px 7px -10px rgba(0, 0, 0, 0.5);
-    }
-
-    .company-name {
-        font-size: 2rem;
-        font-weight: 1000;
-        color: #928406;
-        width: max-content;
-        font-family: 'Bad Script', sans-serif;
-    }
-
-    .nav-links {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
-        gap: 20px;
-    }
-
-    .nav-links a {
-        font-size: 1.4em;
-        font-weight: 600;
-        width: max-content;
-        height: max-content;
-        color: #414141;
-        transition: all 0.1s ease-in-out;
-    }
-
-    .nav-links:hover a.link {
-        color: #9b9b9b;
-    }
-
-    .nav-links a.link:hover {
-        color: #928406;
-        transform: scale(1.05);
-    }
-
-    /* Footer styles */
-    .btn-book-meeting {
-        background-color: #f0f0f0;
-        color: #414141;
-    }
-
-    .btn-book-meeting:hover {
-        background-color: #4586c0;
-        color: #f0f0f0;
-    }
-
-
+/* Navigation styles */
+.company-name {
+    font-weight: 1000;
+    color: #928406;
+    font-family: 'Bad Script', sans-serif;
 }
 
 /* Footer styles */
@@ -220,7 +86,211 @@ footer .heading {
     margin-top: 1em;
 }
 
-/* General purpose css */
+/* Class to hide an element. */
 .hidden {
     display: none;
+}
+
+/* Bouton plus d'informations */
+.btn-more-info {
+    --primary-color: #645bff;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 30px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    font-size: 1.05em;;
+}
+
+.btn-more-info .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-more-info .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+.btn-more-info .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+.btn-more-info:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+.btn-more-info:hover .arrow {
+    background: var(--secondary-color);
+}
+
+.btn-more-info:hover .arrow:before {
+    right: 0;
+}
+
+/* Small devices (phones, large phones and portrait tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    /* Navigation styles */
+    header.desktop-display {
+        display: none;
+    }
+
+    header {
+        box-shadow: 0 7px 7px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    .company-name {
+        font-size: 2rem;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 15px;
+        display: block;
+        /* border: 1px solid white; */
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #f0f0f0;
+        width: 100%;
+        box-shadow: 0 5px 5px 10px rgba(0, 0, 0, 0.1);
+
+        /* Safe area support for iPhones */
+        height: calc(75px + env(safe-area-inset-bottom));
+        height: calc(75px + constant(safe-area-inset-bottom)); /* fallback for older iOS */
+        
+        /* Safe area support for iPhones */
+        padding-bottom: env(safe-area-inset-bottom);
+        /* For backward compatibility with older iOS versions */
+        padding-bottom: constant(safe-area-inset-bottom);
+    }
+
+    .nav-links a {
+        width: 75px;
+    }
+
+    .nav-links .link {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    header .icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .link .icon-name {
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    /* Footer styles */
+    .btn-book-meeting {
+        background-color: #4586c0;
+        color: #f0f0f0;
+    }
+
+    .btn-book-meeting:hover {
+        background-color: #928406;
+        color: #f0f0f0;
+    }
+
+    footer {
+        margin-bottom: calc(75px + env(safe-area-inset-bottom));
+        margin-bottom: calc(75px + constant(safe-area-inset-bottom)); /* fallback for older iOS */;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    /* Navigation bar styles */
+    header.mobile-display {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 100px;
+        margin: 0 auto;
+        background-color: #f0f0f0;
+        box-shadow: 0 7px 7px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    .company-name {
+        font-size: 2rem;
+        width: max-content;
+    }
+    
+    .nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 1.4em;
+        font-weight: 600;
+        width: max-content;
+        height: max-content;
+        color: #414141;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .nav-links:hover a.link {
+        color: #9b9b9b;
+    }
+
+    .nav-links a.link:hover {
+        color: #928406;
+        transform: scale(1.05);
+    }
+
+    /* Footer styles */
+    .btn-book-meeting {
+        background-color: #f0f0f0;
+        color: #414141;
+    }
+
+    .btn-book-meeting:hover {
+        background-color: #4586c0;
+        color: #f0f0f0;
+    }
 }
