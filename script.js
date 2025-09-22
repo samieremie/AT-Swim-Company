@@ -1,4 +1,4 @@
-const navLinks = document.querySelectorAll('.nav-links .link');
+const navLinks = document.querySelectorAll('.mobile-display .nav-links');
 
 navLinks.forEach(link => {
   link.addEventListener('click', () => {

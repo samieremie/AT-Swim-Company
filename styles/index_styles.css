@@ -21,7 +21,6 @@
 .description {
     font-weight: 500;
     color: #f0f0f0;
-    width: 80%;
     line-height: 2rem;
     padding-top: 150px;
 }
@@ -84,11 +83,12 @@
     .home .icon-name {
         color: #928406;
     }
-    
+
     /* First section: home styles */
     .description {
         font-size: 1.7rem;
         font-weight: 500;
+        width: 100%;
     }
 
     #natation {
@@ -97,7 +97,7 @@
     }
 
     .begin {
-        background-color: #356d9c;
+        background-color: #2096fd;
         color: #f0f0f0;
         font-size: 1.25rem;
     }
@@ -121,7 +121,7 @@
     .option {
         width: 100%;
         border-radius: 20px;
-        padding: 20px;
+        padding: 15px;
         background-color: #fff;
         box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
     }
@@ -152,6 +152,7 @@
     /* First section: home styles */
     .description {
         font-size: 2rem;
+        width: 50%;
     }
 
     #natation {
@@ -165,7 +166,7 @@
 
     .begin:hover {
         color:#f0f0f0;
-        background-color: #356d9c;
+        background-color: #2096fd;
     }
 
     /* Second section: option card styles */

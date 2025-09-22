@@ -9,7 +9,7 @@ colors:
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', Arial, sans-serif;;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 body {
@@ -93,7 +93,7 @@ footer .heading {
 
 /* Bouton plus d'informations */
 .btn-more-info {
-    --primary-color: #645bff;
+    --primary-color: #2096fd;
     --secondary-color: #fff;
     --hover-color: #111;
     --arrow-width: 10px;
@@ -185,11 +185,12 @@ footer .heading {
         left: 0;
         background-color: #f0f0f0;
         width: 100%;
+        height: 70px;
         box-shadow: 0 5px 5px 10px rgba(0, 0, 0, 0.1);
 
         /* Safe area support for iPhones */
-        height: calc(75px + env(safe-area-inset-bottom));
-        height: calc(75px + constant(safe-area-inset-bottom)); /* fallback for older iOS */
+        height: calc(70px + env(safe-area-inset-bottom));
+        height: calc(70px + constant(safe-area-inset-bottom)); /* fallback for older iOS */
         
         /* Safe area support for iPhones */
         padding-bottom: env(safe-area-inset-bottom);
@@ -219,7 +220,7 @@ footer .heading {
 
     /* Footer styles */
     .btn-book-meeting {
-        background-color: #4586c0;
+        background-color: #2096fd;
         color: #f0f0f0;
     }
 
@@ -229,8 +230,8 @@ footer .heading {
     }
 
     footer {
-        margin-bottom: calc(75px + env(safe-area-inset-bottom));
-        margin-bottom: calc(75px + constant(safe-area-inset-bottom)); /* fallback for older iOS */;
+        margin-bottom: calc(70px + env(safe-area-inset-bottom));
+        margin-bottom: calc(70px + constant(safe-area-inset-bottom)); /* fallback for older iOS */;
     }
     
 }
@@ -290,7 +291,7 @@ footer .heading {
     }
 
     .btn-book-meeting:hover {
-        background-color: #4586c0;
+        background-color: #2096fd;
         color: #f0f0f0;
     }
 }
