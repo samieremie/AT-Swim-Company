@@ -9,7 +9,7 @@ colors:
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', Arial, sans-serif;;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 body {
@@ -100,7 +100,7 @@ footer .heading {
     --arrow-stroke: 2px;
     box-sizing: border-box;
     border: 0;
-    border-radius: 30px;
+    border-radius: 20px;
     color: var(--secondary-color);
     padding: 1em 1.8em;
     background: var(--primary-color);
