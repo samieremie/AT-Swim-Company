@@ -30,14 +30,19 @@ textarea {
     width: 100%;
 }
 
-.form-container input[type="text"], .form-container textarea {
+.form-container input[type="text"], 
+.form-container input[type="email"],
+.form-container textarea {
     padding: 10px;
     border: none;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.form-container input[type="text"]:focus, .form-container textarea:focus {
+.form-container input[type="text"]:focus, 
+.form-container input[type="email"]:focus,
+.form-container textarea:focus {
+    font-size: 1rem;
     outline: none;
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.05);
     transform: scale(1.05);
@@ -157,7 +162,9 @@ textarea {
         margin: 25px auto;
     }
 
-    .form-container input[type="text"], .form-container textarea {
+    .form-container input[type="text"], 
+    .form-container input[type="email"],
+    .form-container textarea {
         background-color: #fff;
         border: 1px solid #f0f0f0;
     }
