@@ -2,20 +2,14 @@
     color: #928406;
 }
 
-header {
-    box-shadow: none;
+.contact-page {
+    width: 100%;
+    margin: 0 auto;
 }
 
-.form-container {
-    background-color: #f0f0f0;
-    /* box-shadow: 0 0 15px #c4c4c4; */
-    padding: 0px 100px 40px 150px;
-    /* border-radius: 15px; */
-    width: 50%;
-}
-
-.form-container .heading {
-    font-size: 2rem;
+/* Form styles */
+.form-container .contact-heading {
+    color: #928406;
     margin-bottom: 25px;
     font-weight: bold;
     display: block;
@@ -51,10 +45,9 @@ textarea {
 }
 
 .form-container input[type="submit"] {
-    background-color: #645bff;
+    background-color: #2096fd;
     color: #f0f0f0;
     border: none;
-    border-radius: 5px;
     padding: 10px 20px;
     font-size: 1.1rem;
     font-weight: bold;
@@ -67,38 +60,33 @@ textarea {
     transition: transform 0.3s ease-in-out;
 }
 
-#contact-form {
-    width: 70%;
-    margin: 0 auto;
+/* Informations styles */
+.reach-us {
+    height: 100%;
+    background-image: url("../images/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.contact-page {
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    /* padding: 2em; */
-    /* background-color: transparent; */
-    width: 100%;
-    margin: 0 auto;
-    height: 100vh;
+.reach-us .heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+    color: #2096fd;
 }
 
 .contact-info {
     border: none;
     border-radius: 10px;
-    width: 50%;
     margin: 2em 2em 7em 5em;
-    /* background-color: #f0f0f0; */
     padding: 2em;
-    /* box-shadow: 0 0 10px #645bff; */
-    /* height: 250px; */
 }
 
 .contact-info h2 {
     font-size: 1.75rem;
     margin-bottom: 1.3em;
     font-weight: 750;
-    color: #645bff;
+    color: #2096fd;
 }
 
 .contact-info p {
@@ -107,36 +95,7 @@ textarea {
     margin-bottom: 1em;
 }
 
-.reach-us .map-frame {
-    border: none;
-    width: 250px;
-    height: 250px;
-}
-
-.maps {
-    display: flex;
-    gap: 20px;
-}
-
-.reach-us {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 60%;
-    height: 100%;
-    background-image: url("../images/background2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-top-left-radius: 20px;
-}
-
-.reach-us .heading {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 1em;
-    color: #645bff;
-}
-
+/* Maps styles */
 .maps-page {
     background-color: #414141;
     padding-bottom: 25px;
@@ -180,12 +139,96 @@ textarea {
 }
 
 /* Small devices (phones, large phones and portrait tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { 
+    .contact-page {
+        flex-direction: column;
+    }
+
+    .form-container {
+        background-color: #fff;
+        padding: 15px;
+        width: 95%;
+        margin: 50px auto;
+        border-radius: 30px;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-container .contact-heading {
+        font-size: 1.75rem;
+        width: fit-content;
+        margin:  auto;
+    }
+
+    .form-container input[type="text"], .form-container textarea {
+        background-color: #f0f0f0;
+    }
+
+    .form-container input[type="submit"] {
+        border-radius: 15px;
+    }
+
+    #contact-form {
+        width: 100%;
+        padding: 15px;
+    }
+
     .maps {
-    margin: 30px auto 50px;
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    justify-content: space-between;
+        margin: 30px auto 50px;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: space-between;
+    }
+
+    .reach-us {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .contact-info {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        box-shadow: none;
+    }
+
+    .contact-page {
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+    }
+
+    .form-container {
+        background-color: #f0f0f0;
+        padding: 0px 100px 40px 150px;
+        width: 50%;
+    }
+
+    .form-container .heading {
+        font-size: 2rem;
+    }
+
+    .form-container input[type="submit"] {
+        border-radius: 5px;
+    }
+
+    #contact-form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .reach-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 60%;
+        border-top-left-radius: 20px;
+    }
+
+    .contact-info {
+        width: 50%;
     }
 }

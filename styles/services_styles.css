@@ -59,6 +59,11 @@
     .content .btn-more-info {
         width: 195px;
     }
+
+    .propositions-mobile {
+        margin-bottom: calc(110px + env(safe-area-inset-bottom));
+        margin-bottom: calc(110px + constant(safe-area-inset-bottom)); /* fallback for older iOS */;
+    }
 }
 
 @media only screen and (min-width: 768px) {

@@ -7,35 +7,13 @@ header {
     margin-bottom: 50px;
 }
 
-.about-section {
-    width: 75%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-}
-
-.about-section img {
-    width: 50%;
-    border-radius: 50%;
-}
-
-.about-section .content {
-    background-color: #f0f0f0;
-    padding: 2em;
-    width: 45%;
-}
-
 .content h2 {
-    font-size: 2rem;
     font-weight: 800;
     color: #414141;
     margin-bottom: 1em;
 }
 
 .content p {
-    font-size: 1.2rem;
     font-weight: 400;
     color: #414141;
     line-height: 1.6;
@@ -43,7 +21,6 @@ header {
 }
 
 .faq {
-    width: 60%;
     margin: 50px auto 100px;
 }
 
@@ -51,10 +28,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.75em;
     font-weight: 800;
     color: #414141;
-    padding: 0.5em;
+    padding: 15px;
     width: 100%;
     border: none;
 }
@@ -66,7 +42,6 @@ header {
 
 .response {
     padding: 1em;
-    font-size: 1.2rem;
 }
 
 /* Arrow styles */
@@ -76,6 +51,7 @@ header {
     display: inline-block;
     position: relative;
     margin: 0 1rem;
+    z-index: 1;
 }
 .arrow span {
     top: 0.5rem;
@@ -99,4 +75,85 @@ header {
 }
 .arrow.active span:last-of-type {
     transform: rotate(35deg);
+}
+
+@media only screen and (max-width: 768px) {
+    .content h2 {
+        font-size: 1.75rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .about-section img {
+        width: 100%;
+        border-radius: 50%;
+        margin-bottom: 40px;
+    }
+    
+    .about-section .content {
+        background-color: #f0f0f0;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .faq {
+        width: 95%;
+    }
+
+    .question {
+        font-size: 1.5em;
+    }
+
+    .response {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    .about-section {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .about-section img {
+        width: 50%;
+        border-radius: 50%;
+    }
+    
+    .about-section .content {
+        background-color: #f0f0f0;
+        padding: 2em;
+        width: 45%;
+    }
+
+    .faq {
+        width: 60%;
+    }
+
+    .question {
+        font-size: 1.75em;
+    }
+
+    .response {
+        font-size: 1.2rem;
+    }
 }
