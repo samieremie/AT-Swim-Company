@@ -188,7 +188,7 @@
 
     .options {
         display: flex;
-        gap: 3em;
+        gap: 50px;
     }
     
     .options-mobile {
@@ -197,8 +197,9 @@
 
     .option {
         width: 33%;
-        border-radius: 20px;
-        background-color: #d2d2d2;
+        border-radius: 30px;
+        background-color: #fff;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
     }
 
     .option img {
@@ -213,7 +214,7 @@
     }
 
     .option:hover {
-        background-color: #356d9c;
+        background-color: #2096fd;
     }
 
     .option .text {

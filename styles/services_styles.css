@@ -75,7 +75,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2em;
+        gap: 100px;
         width: 100%;
         margin: 2em auto;
     }
@@ -88,12 +88,14 @@
     }
 
     .slide {
-        width: 65%;
+        width: 70%;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 30px;
         display: flex;
         gap: 75px;
         align-items: center;
-        height: 80vh;
-        height: 80svh;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
     }
 
     .slide img {
@@ -107,10 +109,21 @@
         margin-bottom: 2em;
     }
 
+    .content .map-frame {
+        width: 100%;
+        margin-bottom: 25px;
+        border-radius: 15px;
+        border: none;
+    }
+
     .content .info {
         font-size: 1.3em;
         font-weight: 400;
         line-height: 1.3em;
         margin-bottom: 2em;
+    }
+
+    .content .btn-more-info {
+        width: fit-content;
     }
 }
