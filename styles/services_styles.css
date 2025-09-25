@@ -1,6 +1,6 @@
 /* Services styles */
 .nav-links .services {
-    color: #928406;
+    color: var(--yellow);
 }
 
 /* Small devices (phones, large phones and portrait tablets, 768px and down) */

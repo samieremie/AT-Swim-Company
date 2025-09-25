@@ -1,5 +1,5 @@
 .nav-links .contact {
-    color: #928406;
+    color: var(--yellow);
 }
 
 .contact-page {
@@ -9,7 +9,7 @@
 
 /* Form styles */
 .contact-page .contact-heading {
-    color: #928406;
+    color: var(--yellow);
     margin-bottom: 10px;
     font-weight: bold;
     display: block;
@@ -89,7 +89,7 @@ textarea {
 }
 
 .form-container input[type="submit"] {
-    background-color: #2096fd;
+    background-color: var(--blue);
     color: #f0f0f0;
     border: none;
     padding: 10px 20px;
@@ -128,7 +128,7 @@ textarea {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1em;
-    color: #928406;
+    color: var(--yellow);
 }
 
 .contact-info {
@@ -140,7 +140,7 @@ textarea {
     font-size: 1.75rem;
     margin-bottom: 1.3em;
     font-weight: 750;
-    color: #928406;
+    color: var(--yellow);
 }
 
 .contact-info p {
@@ -153,7 +153,7 @@ textarea {
     border-radius: 15px;
     color: #f0f0f0;
     font-size: 1rem;
-    background-color: #2096fd;
+    background-color: var(--blue);
     padding: 15px;
     display: block;
     width: fit-content;
@@ -164,7 +164,7 @@ textarea {
     border-radius: 15px;
     color: #f0f0f0;
     font-size: 1rem;
-    background-color: #2096fd;
+    background-color: var(--blue);
     padding: 15px;
     display: block;
     width: fit-content;
@@ -206,7 +206,7 @@ textarea {
 }
 
 .heading {
-    color: #928406;
+    color: var(--yellow);
     padding-top: 75px;
     font-size: 1.75em;
     font-weight: 900;

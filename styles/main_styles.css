@@ -14,6 +14,10 @@ colors:
 
 :root {
     --red: rgb(255, 112, 112);
+    --yellow: #f7bd10;
+    --blue: #3c97cb;
+    --black: #414141;
+    --light-grey: #f0f0f0;
 }
 
 body {
@@ -30,19 +34,22 @@ a {
 /* Navigation styles */
 .company-name {
     font-weight: 1000;
-    color: #928406;
+    color: var(--yellow);
     font-family: 'Bad Script', sans-serif;
+}
+
+.company-logo {
+    padding-top: 0px;
+    width: 150px;
 }
 
 /* Footer styles */
 footer {
     background-color: #414141;
-    /* color:#928406; */
     color: #f0f0f0;
     text-align: center;
     padding: 1em;
     margin-top: 50px;
-    /* height: 35vh; */
 }
 
 .book-meeting {
@@ -51,14 +58,13 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 1em;
-    /* padding: 1em; */
     height: 100%;
 }
 
 .book-meeting p {
     font-size: 2rem;
     font-weight: 900;
-    color: #928406;
+    color: var(--yellow);
     margin-top: 20px;
 }
 
@@ -79,7 +85,7 @@ footer hr {
 }
 
 footer .heading {
-    color: #928406;
+    color: var(--yellow);
     margin-top: 40px;
     font-size: 1.75em;
     font-weight: 900;
@@ -96,7 +102,7 @@ footer .heading {
 
 /* Bouton plus d'informations */
 .btn-more-info {
-    --primary-color: #2096fd;
+    --primary-color: var(--blue);
     --secondary-color: #fff;
     --hover-color: #111;
     --arrow-width: 10px;
@@ -168,6 +174,12 @@ footer .heading {
         box-shadow: 0 7px 7px -10px rgba(0, 0, 0, 0.5);
     }
 
+    .logo-link {
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+    }
+
     .company-name {
         font-size: 2rem;
         width: 80%;
@@ -223,13 +235,13 @@ footer .heading {
 
     /* Footer styles */
     .btn-book-meeting {
-        background-color: #2096fd;
+        background-color: var(--blue);
         color: #f0f0f0;
         border-radius: 20px;
     }
 
     .btn-book-meeting:hover {
-        background-color: #928406;
+        background-color: var(--yellow);
         color: #f0f0f0;
     }
 
@@ -250,7 +262,7 @@ footer .heading {
         justify-content: space-between;
         align-items: center;
         width: 80%;
-        height: 100px;
+        height: 120px;
         margin: 0 auto;
         background-color: #f0f0f0;
         box-shadow: 0 7px 7px -10px rgba(0, 0, 0, 0.5);
@@ -283,7 +295,7 @@ footer .heading {
     }
 
     .nav-links a.link:hover {
-        color: #928406;
+        color: var(--yellow);
         transform: scale(1.05);
     }
 
@@ -295,7 +307,7 @@ footer .heading {
     }
 
     .btn-book-meeting:hover {
-        background-color: #2096fd;
+        background-color: var(--blue);
         color: #f0f0f0;
     }
 }

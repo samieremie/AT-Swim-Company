@@ -27,7 +27,7 @@
 
 #natation {
     font-weight: 1000;
-    color: #928406;
+    color: var(--yellow);
     display: block;
     margin: 0.3em 0em;
 }
@@ -79,7 +79,11 @@
     }
 
     .home .icon-name {
-        color: #928406;
+        color: var(--yellow);
+    }
+
+    .logo-link {
+        width: 80%;
     }
 
     /* First section: home styles */
@@ -95,7 +99,7 @@
     }
 
     .begin {
-        background-color: #2096fd;
+        background-color: var(--blue);
         color: #f0f0f0;
         font-size: 1.25rem;
         border-radius: 20px;
@@ -153,7 +157,7 @@
     }
 
     .nav-links .home {
-        color: #928406;
+        color: var(--yellow);
     }
 
     .nav-links a {
@@ -178,7 +182,7 @@
 
     .begin:hover {
         color:#f0f0f0;
-        background-color: #2096fd;
+        background-color: var(--blue);
     }
 
     /* Second section: option card styles */
@@ -214,7 +218,7 @@
     }
 
     .option:hover {
-        background-color: #2096fd;
+        background-color: var(--blue);
     }
 
     .option .text {

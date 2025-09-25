@@ -1,6 +1,6 @@
 /* About page styles */
 .nav-links .about {
-    color: #928406;
+    color: var(--yellow);
 }
 
 header {
@@ -37,7 +37,7 @@ header {
 
 .question:hover {
     cursor: pointer;
-    color:#928406;
+    color: var(--yellow);
 }
 
 .response {
