@@ -40,7 +40,7 @@ a {
 
 .company-logo {
     padding-top: 0px;
-    width: 150px;
+    width: 200px;
 }
 
 /* Footer styles */
@@ -262,7 +262,7 @@ footer .heading {
         justify-content: space-between;
         align-items: center;
         width: 80%;
-        height: 120px;
+        height: 175px;
         margin: 0 auto;
         background-color: #f0f0f0;
         box-shadow: 0 7px 7px -10px rgba(0, 0, 0, 0.5);
