@@ -101,7 +101,7 @@
             >
               <path
                 d="M5.254 14h10.988c.104.172.231.332.38.474l.72.682a3.96 3.96 0 0 1-.421 1.002 4.23 4.23 0 0 1-.687.894l-.794-.265a2.19 2.19 0 0 0-2.507.866l-.722 1.06a2.36 2.36 0 0 0 .27 2.975l.227.228c-.541.057-1.11.085-1.708.085-2.89 0-5.128-.657-6.691-2a3.75 3.75 0 0 1-1.305-2.844v-.907A2.25 2.25 0 0 1 5.254 14Zm11.757-1.755.503-1.187c.236-.557.801-.86 1.356-.744l.118.031.63.202c.626.2 1.104.735 1.259 1.407.367 1.598-.074 3.543-1.322 5.835-1.247 2.29-2.614 3.666-4.1 4.13a1.76 1.76 0 0 1-1.663-.343l-.124-.113-.478-.48a1.36 1.36 0 0 1-.222-1.591l.07-.116.722-1.06c.284-.417.77-.615 1.237-.515l.127.035 1.332.444a5.081 5.081 0 0 0 1.33-1.52 4.798 4.798 0 0 0 .596-1.59l.038-.269-1.109-1.053a1.354 1.354 0 0 1-.348-1.372l.048-.131.503-1.187-.503 1.187ZM11 2.005a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"
-                fill="#928406"
+                fill="#f7bd10"
               />
             </svg>
             <p class="icon-name">Contact</p>
@@ -119,12 +119,12 @@
             besoins.
           </p>
         </div>
+
         <div class="form-container">
           <form
             id="contact-form"
             action="https://docs.google.com/forms/d/e/1FAIpQLScPBhOaf3jmeNwrwzg9NoJIez8Fh1kZRO8bMO-3bAADiLAuXg/formResponse"
             method="POST"
-            novalidate
           >
             <div class="user-box">
               <input
@@ -154,6 +154,7 @@
                 name="entry.286169187"
                 id="email"
                 placeholder=" "
+                data-error="Tapez une adresse email valide"
                 required
               />
               <label for="entry.286169187">Email</label>
@@ -174,10 +175,20 @@
         </div>
       </div>
 
+      <dialog id="successDialog">
+        <img src="../images/icons/check.png" alt="A check button" />
+        <h1>Merci!</h1>
+        <p>Nous avons bien reçu votre formulaire et traitons votre demande.</p>
+        <div class="row-buttons">
+          <button class="closeDialog">Fermer</button>
+          <a class="closeDialog" href="/index.html">Accueil</a>
+        </div>
+      </dialog>
+
       <div class="reach-us">
         <div class="contact-info">
           <h2>Informations de Contact</h2>
-          <a href="tel:+32111111" class="phone-link"> Appeler: +32 11 11 11 </a>
+          <!-- <a href="tel:+32111111" class="phone-link"> Appeler: +32 11 11 11 </a> -->
           <a href="mailto:atswimcoaching@gmail.com" class="email-link">
             Envoyer un email: atswimcoaching@gmail.com
           </a>
@@ -186,39 +197,6 @@
       <p id="status"></p>
     </div>
 
-    <!-- <div class="maps-page">
-      <p class="heading">Lieux des cours</p>
-      <div class="maps" id="maps">
-        <div class="piscine">
-          <p class="title">Piscine de Rhode-Saint-Genèse</p>
-          <iframe
-            class="map-frame"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.7265523750166!2d4.34705648722642!3d50.743560393127886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3cfa280e1a835%3A0x4a74bc9ee7033946!2sZwembad%20Wauterbos%20Piscine!5e0!3m2!1sfr!2sbe!4v1757602432261!5m2!1sfr!2sbe"
-            allowfullscreen=""
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div class="piscine">
-          <p class="title">
-            Piscine du Collège Cardinal Mercier à Braine-l'Alleud
-          </p>
-          <iframe
-            class="map-frame"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5055.585371152232!2d4.386563976075367!3d50.686673070327714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3d1fbeada9837%3A0x80fe821a5cd9455e!2sColl%C3%A8ge%20archi%C3%A9piscopal%20Cardinal%20Mercier!5e0!3m2!1sfr!2sbe!4v1757605553151!5m2!1sfr!2sbe"
-            allowfullscreen=""
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!-- <footer>
-      <div class="book-meeting">
-        <p>Réservez une séance</p>
-        <a href="/pages/contact.html"
-          ><button class="btn-book-meeting">Commencez</button></a
-        >
-      </div>
-    </footer> -->
     <script src="../script.js"></script>
     <script src="../scripts/contact.js"></script>
   </body>

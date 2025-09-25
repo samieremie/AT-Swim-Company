@@ -1,21 +1,47 @@
 const form = document.querySelector('#contact-form');
+const dialog = document.getElementById("successDialog");
+const closeBtns = document.querySelectorAll(".closeDialog");
+
+form.setAttribute("novalidate", "");
 
 function validateField(field) {
   const errorEl = field.parentElement.querySelector('.error-message');
 
   if (!field.validity.valid) {
-    console.log('field is invalid');
-    errorEl.textContent = "This field is required";
+    field.classList.add("user-invalid");
+    errorEl.textContent = field.dataset.error || "Ce champ est obligatoire";
     return false;
   }
 
-  console.log('field is valid');
+  errorEl.textContent = "";
   return true;
 }
+
+// Hide error when user focuses
+function clearErrorOnFocus(field) {
+  const container = field.closest('.user-box');
+  const errorEl = container?.querySelector('.error-message');
+
+  field.classList.remove("user-invalid");
+  if (errorEl) errorEl.textContent = "";
+}
+
+form.querySelectorAll('input').forEach(input => {
+  input.addEventListener("blur", () => validateField(input));  // validate when leaving
+  input.addEventListener("focus", () => clearErrorOnFocus(input)); // clear when entering
+})
+
+closeBtns.forEach(closeBtn => {
+  closeBtn.addEventListener("click", () => {
+    // console.log("click on close button");
+    dialog.close();
+  });
+});
 
 form.addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent the default form submission
   
+  // ---------------- Check validity of form data ----------------
   let isValid = true;
 
   const fields = form.querySelectorAll('input');
@@ -26,21 +52,15 @@ form.addEventListener('submit', function(event) {
       isValid = false;
     }
   })
-  // Check if the email is valid
-  const email = document.querySelector('#email').value;
-  
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailPattern.test(email)) {
-      return;
-  }
-  console.log('Email:', email);
   
   if (isValid) {
     console.log('submitting');
   } else {
-    console.log('error');
+    form.querySelector(":invalid").focus();
+    return;
   }
 
+  // ---------------- Send form data ----------------
   // Collect form data
   const formData = new FormData(form);
 
@@ -61,10 +81,10 @@ form.addEventListener('submit', function(event) {
     body: body.toString()
   })
   .then(() => {
+    dialog.showModal();
     form.reset(); // Clear form
   })
   .catch((error) => {
     console.error(error);
   });
 });
-

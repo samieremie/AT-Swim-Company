@@ -22,7 +22,6 @@
     font-weight: 500;
     color: #f0f0f0;
     line-height: 2rem;
-    padding-top: 150px;
 }
 
 #natation {
@@ -83,10 +82,14 @@
     }
 
     .logo-link {
-        width: 80%;
+        width: 95%;
     }
 
     /* First section: home styles */
+    .home-section {
+        width: 90%;
+    }
+
     .description {
         font-size: 1.7rem;
         font-weight: 500;
@@ -168,6 +171,7 @@
     .description {
         font-size: 2rem;
         width: 50%;
+        padding-top: 150px;
     }
 
     #natation {
