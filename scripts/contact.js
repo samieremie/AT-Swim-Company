@@ -1,18 +1,45 @@
 const form = document.querySelector('#contact-form');
-const status = document.getElementById("status");
+
+function validateField(field) {
+  const errorEl = field.parentElement.querySelector('.error-message');
+
+  if (!field.validity.valid) {
+    console.log('field is invalid');
+    errorEl.textContent = "This field is required";
+    return false;
+  }
+
+  console.log('field is valid');
+  return true;
+}
 
 form.addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent the default form submission
-  alert('Form data captured! Check the console for details.');
+  
+  let isValid = true;
+
+  const fields = form.querySelectorAll('input');
+
+  fields.forEach((field) => {
+    const fieldValid = validateField(field);
+    if (!fieldValid) {
+      isValid = false;
+    }
+  })
   // Check if the email is valid
   const email = document.querySelector('#email').value;
   
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailPattern.test(email)) {
-      alert('Please enter a valid email address.');
       return;
   }
   console.log('Email:', email);
+  
+  if (isValid) {
+    console.log('submitting');
+  } else {
+    console.log('error');
+  }
 
   // Collect form data
   const formData = new FormData(form);
@@ -34,11 +61,10 @@ form.addEventListener('submit', function(event) {
     body: body.toString()
   })
   .then(() => {
-    status.textContent = "Formulaire envoyé avec succès !";
     form.reset(); // Clear form
   })
   .catch((error) => {
     console.error(error);
-    status.textContent = "Erreur lors de l'envoi du formulaire.";
   });
 });
+

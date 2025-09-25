@@ -12,6 +12,10 @@ colors:
     /* border: 1px solid black; */
 }
 
+:root {
+    --red: rgb(255, 112, 112);
+}
+
 body {
     background-color: #f0f0f0;
     color: #414141;

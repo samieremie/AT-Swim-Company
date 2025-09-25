@@ -103,31 +103,76 @@
     </header>
 
     <div class="contact-page">
-      <div class="form-container">
-        <span class="contact-heading">Contactez-nous</span>
-        <form
-          id="contact-form"
-          action="https://docs.google.com/forms/d/e/1FAIpQLScPBhOaf3jmeNwrwzg9NoJIez8Fh1kZRO8bMO-3bAADiLAuXg/formResponse"
-          method="POST"
-        >
-          <label for="entry.870549816">Prénom</label>
-          <input type="text" name="entry.870549816" id="prenom" /><br />
-          <label for="entry.1372450585">Nom</label>
-          <input type="text" name="entry.1372450585" id="nom" /><br />
-          <label for="entry.286169187">Email</label>
-          <input type="email" name="entry.286169187" id="email" /><br />
-          <label for="entry.1741368019">Message (Optionel)</label>
-          <textarea type="text" name="entry.1741368019" id="message"></textarea>
-          <br />
-          <input type="submit" value="Envoyer" />
-        </form>
+      <div class="inscription">
+        <div class="inscription-info">
+          <span class="contact-heading">Inscrivez-vous</span>
+          <p class="contact-description">
+            Vous serez contacté au plus vite via email pour discuter de vos
+            besoins.
+          </p>
+        </div>
+        <div class="form-container">
+          <form
+            id="contact-form"
+            action="https://docs.google.com/forms/d/e/1FAIpQLScPBhOaf3jmeNwrwzg9NoJIez8Fh1kZRO8bMO-3bAADiLAuXg/formResponse"
+            method="POST"
+            novalidate
+          >
+            <div class="user-box">
+              <input
+                type="text"
+                name="entry.870549816"
+                id="prenom"
+                placeholder=" "
+                required
+              />
+              <label for="entry.870549816">Prénom</label>
+              <span class="error-message"></span>
+            </div>
+            <div class="user-box">
+              <input
+                type="text"
+                name="entry.1372450585"
+                id="nom"
+                placeholder=" "
+                required
+              />
+              <label for="entry.1372450585">Nom</label>
+              <span class="error-message"></span>
+            </div>
+            <div class="user-box">
+              <input
+                type="email"
+                name="entry.286169187"
+                id="email"
+                placeholder=" "
+                required
+              />
+              <label for="entry.286169187">Email</label>
+              <span class="error-message"></span>
+            </div>
+            <div class="user-box">
+              <textarea
+                type="text"
+                name="entry.1741368019"
+                id="message"
+                placeholder=" "
+              ></textarea>
+              <label for="entry.1741368019">Message (Optionel)</label>
+            </div>
+            <br />
+            <input type="submit" value="Envoyer" />
+          </form>
+        </div>
       </div>
 
       <div class="reach-us">
         <div class="contact-info">
           <h2>Informations de Contact</h2>
-          <p>Téléphone: +32 11 11 11</p>
-          <p>Email: atswimcoaching@gmail.com</p>
+          <a href="tel:+32111111" class="phone-link"> Appeler: +32 11 11 11 </a>
+          <a href="mailto:atswimcoaching@gmail.com" class="email-link">
+            Envoyer un email: atswimcoaching@gmail.com
+          </a>
         </div>
       </div>
       <p id="status"></p>
