@@ -21,7 +21,7 @@
     .card {
         width: 95%;
         border-radius: 30px;
-        background-color: #fff;
+        background-color: var(--light-blue);
         padding: 15px;
         margin: 0 auto 50px;
         box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
@@ -90,7 +90,7 @@
     .slide {
         width: 70%;
         padding: 20px;
-        background-color: #fff;
+        background-color: var(--light-blue);
         border-radius: 30px;
         display: flex;
         align-items: center;

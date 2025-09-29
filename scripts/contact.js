@@ -69,8 +69,7 @@ form.addEventListener('submit', function(event) {
   formData.forEach((value, key) => body.append(key, value));
 
   // Google Forms action URL
-  const googleFormsURL = "https://docs.google.com/forms/d/1t5q-P4YiJPQYoBWjSGABsDRTqmkKwr8YiDFLQF4Lrcw/formResponse";
-
+  const googleFormsURL = "https://docs.google.com/forms/d/1yvWiFCQoR6c905SVjjrVDvlbtZd55rYJJuI_KrVRI40/formResponse";
   // Send the form data via fetch
   fetch(googleFormsURL, {
     method: "POST",

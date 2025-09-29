@@ -132,7 +132,7 @@
         width: 100%;
         border-radius: 20px;
         padding: 15px;
-        background-color: #fff;
+        background-color: var(--light-blue);
         box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
     }
 
@@ -206,7 +206,7 @@
     .option {
         width: 33%;
         border-radius: 30px;
-        background-color: #fff;
+        background-color: var(--light-blue);
         box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
     }
 
